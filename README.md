@@ -1,3 +1,3 @@
 # Landing-page
 
-Apple product landing page.
+Apple product Landing page.
