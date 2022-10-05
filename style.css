@@ -13,10 +13,15 @@
 /* hero-header */
 .hero-section {
   border: 1px solid black;
-  background: #1f2937;
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: center;
+  
+/* overlay effect */
+  min-height:100%;
+  background:url("images/Apple.jpg");
+  background-size:cover;
+  box-shadow:inset 0 0 0 2000px rgba(10, 10, 10, 0.3);
 }
 
 .hero-header {
@@ -41,9 +46,9 @@
   gap: 30px;
 }
 
-.hero-section .logo {
-  font-size: 24px;
-  color: #f9faf8;
+.hero-section .links li:hover{
+  cursor:pointer;
+  color:black;
 }
 
 /* hero-content*/
@@ -51,7 +56,10 @@
 .hero-image {
   width: 550px;
   height: 250px;
-  background: grey;
+  background-image:url("images/airpods.gif");
+  
+  border-radius: 10px;
+  
 }
 
 .hero-content {
@@ -81,13 +89,18 @@
 }
 
 .hero-text button {
-  background: #3882f6;
+  background: black;
   border: none;
   color: #eee;
   padding: 8px 35px;
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
+  cursor:pointer;
+}
+
+.hero-text button:hover{
+  background:rgba(0,0,0,0.5);
 }
 
 .hero-text p {
@@ -138,13 +151,73 @@
   font-size: 18px;
   color: grey;
   font-weight: 400;
+  
+  row-gap: 20px;
 }
 
-.box-container .box {
-  border: 4px solid #3882f6;
+.box-container .box1 .box {
+  border: 4px solid chocolate;
+  background: url(images/homepod-mini.jpg);
+  background-size:cover;
+  background-position:center;
   border-radius: 20px;
   height: 160px;
   width: 160px;
+}
+
+.box-container .box1 .box:hover{
+  height: 250px;
+  width: 200px;
+  z-index:1;
+}
+
+.box-container .box2 .box {
+  border: 4px solid chocolate;
+  background: url(images/Apple-watch.jpg);
+  background-size:cover;
+  background-position:center;
+  border-radius: 20px;
+  height: 160px;
+  width: 160px;
+}
+
+.box-container .box2 .box:hover{
+  height: 250px;
+  width: 200px;
+  z-index:1;
+}
+
+
+.box-container .box3 .box {
+  border: 4px solid chocolate;
+  background: url(images/Apple-tv-stick.jpg);
+  background-size:cover;
+  background-position:center;
+  border-radius: 20px;
+  height: 160px;
+  width: 160px;
+}
+
+.box-container .box3 .box:hover{
+  height: 250px;
+  width: 200px;
+  z-index:1;
+}
+
+.box-container .box4 .box {
+  border: 4px solid chocolate;
+  background: url(images/watch-2.png);
+  background-size:cover;
+  background-position:center;
+  border-radius: 20px;
+  height: 160px;
+  width: 160px;
+}
+
+.box-container .box4 .box:hover{
+  height: 250px;
+  width: 200px;
+  z-index:1;
 }
 
 /* quote section */
@@ -195,7 +268,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #3882f6;
+  background: chocolate;
   height: 150px;
 }
 
@@ -213,13 +286,18 @@
 }
 
 .wrapper .btn button {
-  background: #3882f6;
-  border: 2px solid white;
+  background: #820000;
+  border:none;
   color: white;
-  padding: 5px 35px;
+  padding: 10px 35px;
   border-radius: 10px;
   font-size: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .btn button:hover{
+  background:rgba(255, 255, 255, 0.1);
+  cursor:pointer;
 }
 
 /* footer */
